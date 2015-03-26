@@ -1,0 +1,19 @@
+<!DOCTYPE validators PUBLIC
+ "-//Apache Struts//XWork Validator 1.0.3//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+
+  <!-- 歌手名、曲名、歌詞のうち1項目以上の入力が必須 -->
+  <validator type="expression">
+    <param name="expression">
+      <![CDATA[
+        songInfoBean.artist.replaceAll("　", " ").trim().length() > 0 ||
+        songInfoBean.track.replaceAll("　", " ").trim().length() > 0 ||
+        songInfoBean.phrase.replaceAll("　", " ").trim().length() > 0
+      ]]>
+    </param>
+    <message>検索条件が入力されていません</message>
+  </validator>
+
+</validators>

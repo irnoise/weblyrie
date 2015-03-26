@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.contents {
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: large;
+}
+
+.trackList {
+	margin-left: 24px;
+	margin-right: 24px;
+	background-color: silver;
+	padding: 8px 24px;
+	border-collapse: collapse;
+	border-radius: 16px;
+}
+
+.button {
+	width: 75%;
+	height: 25%;
+	padding: 8px;
+}
